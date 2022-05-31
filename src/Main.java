@@ -110,6 +110,11 @@ public class Main {
 
         System.out.println(willBuyDrink(isHotOutSide, moneyInPocket));
 
+        String[] namesArray = {"Peter", "Paul", "Mary", "John"};
+        String character = "m";
+
+        System.out.println(namesStartWith(namesArray,character));
+
 
 
     }
@@ -190,6 +195,19 @@ public class Main {
 
         /* 13.Create a method of your own that solves a problem.
         In comments, write what the method does and why you created it.*/
+
+        /* Create a method that take an array of names and a character(case insensitive) and
+        return names starts with a given character and that character*/
+
+        public static String namesStartWith(String[]nameString, String character) {
+            for(String name : nameString) {
+                if(name.startsWith(character.toUpperCase())) {
+                    System.out.println(name);
+                }
+            }
+
+            return character;
+        }
 
 
 
